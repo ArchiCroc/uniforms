@@ -261,7 +261,7 @@ export default class BaseField extends Component {
             // 6. Calculated _special_ field props.
             label,
             name,
-            placeholder
+            (placeholder instanceof Function)? placeholder() : placeholder
         };
     }
 
